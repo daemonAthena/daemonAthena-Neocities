@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ASMR</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="sidebar-container"></div>
+
+            <div class="main-content">
+                <h2>ASMR Audio Library</h2>
+                <p>Click any track to preview it in the player below ✨</p>
+                
+                <div class="audio-library">
+                    <div class="audio-item" onclick="playAudio('media/priestess-asmr.mp3', 'Gentle Rain')">
+                        <div class="audio-icon">🎧</div>
+                        <h3>Priestess Comforts and Validates You</h3>
+                        <p>LGBTQ+ Affirmations from a religious perspective</p>
+                    </div>
+                </div>
+            </div>      
+        </div>
+            <script src="site-utils.js"></script>
+            <script>
+                loadSidebar();
+                initAudioPlayer();
+            </script>
+        
+        <footer class="audio-footer">
+            <audio id="audio-player" controls>
+                <source id="audio-source" src="media/boa-duvet.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </footer>
+
+    </body>
+</html>

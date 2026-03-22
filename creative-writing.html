@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Creative Writings</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="sidebar-container"></div>
+
+            <div class="main-content">
+                <h2>Creative Writing</h2>
+                <p>Explore my stories and creative pieces ✍️</p>
+                
+                <div class="story-list">
+                    <a href="writing/athenas-daemon.html" class="story-link">
+                        <h3>Athena's Daemon</h3>
+                        <p>A brief description or excerpt of your first story...</p>
+                    </a>
+                    <a href="writing/ode-to-the-computer.html" class="story-link">
+                        <h3>Ode to the Computer</h3>
+                        <p>A brief description or excerpt of your second story...</p>
+                    </a>
+                </div>
+            </div>      
+        </div>
+
+            <script src="site-utils.js"></script>
+            <script>
+                loadSidebar();
+                initAudioPlayer();
+            </script>
+        
+        <footer class="audio-footer">
+            <audio id="audio-player" controls>
+                <source id="audio-source" src="media/boa-duvet.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </footer>
+        
+        <footer class="audio-footer">
+            <audio controls autoplay loop muted>
+                <source src="media/boa-duvet.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </footer>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Academics</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="sidebar-container"></div>
+
+            <div class="main-content">
+                <h2>Academics</h2>
+                <p>Explore my academic achievements, projects, and research work. 📚</p>
+                
+                <div class="academic-links">
+                    <a href="https://daemonathena.github.io/obsidian-maths-vault/" target="_blank" class="academic-link">
+                        <div class="academic-thumbnail" style="background-image: url('media/algebra-preview.png')"></div>
+                        <div class="academic-content">
+                            <h3>My Maths Research</h3>
+                            <p>I like studying boolean algebras so that hopefully I can discover links between pure maths and programming</p>
+                            <span class="external-indicator">↗ External Link</span>
+                        </div>
+                    </a>
+                </div>
+            </div>      
+        </div>
+
+            <script src="site-utils.js"></script>
+            <script>
+                loadSidebar();
+                initAudioPlayer();
+            </script>
+        
+        <footer class="audio-footer">
+            <audio id="audio-player" controls>
+                <source id="audio-source" src="media/boa-duvet.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </footer>
+        
+        <footer class="audio-footer">
+            <audio controls autoplay loop muted>
+                <source src="media/boa-duvet.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </footer>

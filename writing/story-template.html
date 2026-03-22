@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Profile</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="story-style.css">
+    </head>
+    <body>
+    <div class="container-story">
+        <div class="main-content-story" id="story-content">
+                <h2>Story Title</h2>
+                <p>Loading....</p>
+            </div>
+        </div>
+            <div class="profile-sidebar-window" id="story-sidebar">
+                <div class="profile-header">
+                    <h1>Story Library</h1>
+                    <p class="bio">Browse other stories</p>
+                </div>
+            </div>      
+        <footer class="audio-footer">
+            <audio controls autoplay loop muted>
+                <source src="../media/boa-duvet.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </footer>
+<script src="story-utils.js">
+        // Initialize page
+        loadStoryContent('../docs/ode-to-the-computer.txt', 'story-content', 'Ode To The Computer');
+        loadStorySidebar();
+</script>
+    </body>
+</html>

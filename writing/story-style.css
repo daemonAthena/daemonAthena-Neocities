@@ -1,0 +1,118 @@
+/* Story Page Specific Styles */
+
+/* Override container to use row-reverse only on story pages */
+
+.container-story {
+    /*display: flex;*/
+    /*flex-direction: row-reverse;*/
+    height: fit-content;
+    min-height: 100vh;
+    border: 3px solid;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    background: #c0c0c0;
+    box-shadow: 
+        inset 1px 1px 0 #ffffff,
+        inset 2px 2px 0 #dfdfdf,
+        inset -1px -1px 0 #808080,
+        inset -2px -2px 0 #000000;
+    position: relative;
+    max-width: 1400px;
+    /*width: 100%;*/
+}
+
+/* Story Sidebar - Window Style */
+.profile-sidebar-window {
+    width: 250px;
+    background: #c0c0c0;
+    border: 3px solid;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+    box-shadow: 
+        inset 1px 1px 0 #ffffff,
+        inset 2px 2px 0 #dfdfdf,
+        inset -1px -1px 0 #808080,
+        inset -2px -2px 0 #000000;
+    padding: 10px;
+    margin: 10px;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.profile-sidebar-window .profile-header {
+    background: linear-gradient(90deg, #000080, #1084d7);
+    padding: 3px 3px 3px 5px;
+    margin: -10px -10px 10px -10px;
+    color: white;
+}
+
+.profile-sidebar-window .profile-header h1 {
+    font-size: 14px;
+    margin: 2px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.profile-sidebar-window .profile-header .bio {
+    display: none;
+}
+
+.profile-sidebar-window .profile-section {
+    background: #c0c0c0;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid;
+    border-color: #dfdfdf #808080 #808080 #dfdfdf;
+}
+
+.profile-sidebar-window .profile-section h3 {
+    background: #000080;
+    color: white;
+    padding: 2px 3px;
+    margin: -5px -5px 5px -5px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.profile-sidebar-window .profile-section ul {
+    font-size: 12px;
+}
+
+.profile-sidebar-window .profile-section a {
+    color: #000080;
+    text-decoration: underline;
+}
+
+.profile-sidebar-window .profile-section a:hover {
+    opacity: 1;
+    text-decoration: none;
+    background: #000080;
+    color: white;
+}
+
+/* Main content stays on left with fixed positioning */
+.main-content-story {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('../media/wallpaper.jpg');
+    width: fit-content;
+    max-width: 800px;
+    padding: 40px;
+    overflow-y: auto;
+    text-align: left;
+    margin-right: 0px;
+    position: relative;
+}
+
+.main-content-story h2 {
+    color: #784949;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-align: left;
+}
+
+.main-content-story p {
+    color: #bb8d8d;
+    line-height: 1.8;
+    font-size: 16px;
+    text-align: left;
+}
