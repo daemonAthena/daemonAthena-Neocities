@@ -3,6 +3,13 @@
  */
 
 /**
+ * 
+ */
+function initSiteUtils() {
+    loadStorySidebar();
+}
+
+/**
  * Load and display a text file with markdown support
  * @param {string} filePath - Path to the text/markdown file
  * @param {string} contentElementId - ID of the element to insert content into
